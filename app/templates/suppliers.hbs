@@ -1,0 +1,19 @@
+
+<h3>Suppliers</h3>
+<table class="table table-hover">
+    <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Location</th>
+    </tr>
+   
+    {{#each @model as |supplier|}}
+     <tr>
+        <td>{{supplier.name}}</td>
+        <td>{{supplier.phone}}</td>
+        <td>{{supplier.email}}</td>
+        <td>{{supplier.location}}</td>
+    </tr>
+    {{/each}}
+</table>
